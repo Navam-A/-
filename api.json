@@ -1,0 +1,154 @@
+{
+  "blogs": [
+    {
+      "id": "52b6",
+      "title": "Stop Using localStorage!",
+      "author": "Julien Etienne",
+      "content": "Problems with localStorage?\nlocalStorage came about around 2009 as a 5MB string based storage. Let’s cut to the chase with some bullet points since our attention spans are in disarray these days:\n\n&#x2022; A collection of Strings: It can only store strings. If you want to store or retrieve you have to serialize and deserialize. If you forget to you may be exposed to quirks that have been responsible for all sorts of broken websites. E.g. When you store “true” or “false” there is also a potential `null`, `undefined` or “” to look out for depending on your setup.\n\n&#x2022; No Structured Data: JavaScript has a thing called The structured clone algorithm. You really need to know this is a thing. Modern APIs and updated APIs such as postMessage, WebWorkers, IndexedDB, Caches API, BroadcastChannel, Channel Messaging API, MessagePort and the History API all use structured data. It solves the problem with serializing and deserializing JSON within an app. localStorage had not been updated with this feature and there are no discussions around it happening in the future.\n\n&#x2022; Common security compromises: To clarify, you should never store sensitive data in any persistent storage that wasn’t designed specifically for it. Developers still commonly store Session IDs, JWTs, credit card details and API keys in localStorage. It’s a very common security hack because it is as easy as window.localStorage\n\n&#x2022; Performance: Historically localStorage had it’s slow moments, though there has been some optimisations over time that brings it up to a resonable performance. Despite this, it’s still not desirable for concurrent applications with a need for frequent transactions. If you benchmark on let’s say the latest MacBook without throttling performance you will may not understand the cost implications on low powered devices.\n\n&#x2022; Size Limitation: localStorage has a 5MB cap which is subject to eviction. This is a very small amount for modern applications. It’s difficult to store encoded media with such a small amount. And it’s not set in stone, just like all persistent storage on the web localStorage can and will be evicted by the browser at some point. You are expected to manage that part of the data life-cycle, despite there being no reminder to.",
+      "image": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*B9czCu8g4ihd4Ijq.png"
+    },
+    {
+      "id": "c132",
+      "title": "UX/UI Case Study — Improving Ryanair’s Online Flight Booking Experience",
+      "author": "Eva Martí Rodríguez ",
+      "content": "After completing my UX/UI Design Bootcamp at Ironhack, I’ve been fully immersed in job hunting (and moving apartments, yay! 🙃), while also wanting to apply my design skills to new projects.\\n\\nA couple of months ago, I interviewed for a UX/UI designer role, going through an initial chat with HR, a follow-up with the Head of UX, and a final take-home assignment.\\n\\nSpoiler alert: I didn’t get the job. 😅 However, the company gave me great feedback on my assignment. Not wanting my efforts to go to waste, I have decided to write this case study to showcase my work and share the experience with other designers.\\n\\nIf you are not a Medium member you can still read the full case study here.\\n\\nRole: UX/UI Designer\\nTimeline: 9 hours\\nTeam: Individual Project\\nTools: Figma\\nMethods: Heuristic Evaluation, Competitive Analysis, User Testing.",
+      "image": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*otsUVvbiD-z3XMOJauzlHw.png"
+    },
+    {
+      "title": "Meta's 'consent or pay' data grab faces fresh EU charges",
+      "author": "Natasha Lomas",
+      "content": "A controversial move by Meta last year, when it switched to charging users in the Europe Union for an ad-free subscription for access Facebook and/or Instagram unless they agreed to be tracked and profiled so it could keep running its attention-mining microtargeting ad business, has triggered a set of complaints from consumer rights groups. The complaints are being brought under the bloc's data protection rules.  Currently, Meta charges regional users €9.99/month on web (or €12.99/month on mobile) to opt out of seeing any adverts per linked Facebook and Instagram account. The only other choice EU users have if they want to access Facebook and Instagram is to agree to its tracking — meaning the offer is: Literally pay for privacy; or 'pay' for free access by losing your privacy.  Eight consumer rights groups from across the region are filing complaints with national data protection authorities against this “consent or pay” choice, the European consumer organization, BEUC — which is a membership and coordinating body for the groups — announced today.",
+      "image": "https://techcrunch.com/wp-content/uploads/2019/05/01-Mark-Zuckerberg-F82019.jpg?w=1390&crop=1",
+      "id": "f7cd"
+    }
+  ],
+  "news": [
+    {
+      "id": "3f09",
+      "title": "Gaganyaan astronaut designates announced by PM Modi",
+      "author": "TIKI RAJWI",
+      "content": "Group Captain Prasanth Balakrishnan Nair, Group Captain Ajit Krishnan, Group Captain Angad Pratap and Wing Commander Shubhanshu Shukla – the four Indian Air Force (IAF) pilots are the ‘astronaut designates’ who have been undergoing training for India’s Gaganyaan human spaceflight mission, planned for 2025.\n\nTheir names were revealed for the first time by Prime Minister Narendra Modi during a visit to the Vikram Sarabhai Space Centre (VSSC) in Thiruvanathapuram on February 27 (Tuesday).",
+      "image": "https://th-i.thgim.com/public/news/national/kerala/ngd43d/article67890966.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202024-02-27%20at%2012.20.47.jpeg"
+    },
+    {
+      "title": "Trump immunity claim: Top US court agrees to hear case in April",
+      "author": "Madeline Halpert and Anthony Zurcher",
+      "content": "The Supreme Court will decide if ex-President Donald Trump is immune from being prosecuted on charges of trying to overturn the 2020 election.  The 6-3 conservative majority court decided on Wednesday to hear Mr Trump's claims that he should be shielded from criminal liability.  The ruling marks the first time the court has weighed in on such a case.  A US Court of Appeals panel has already rejected Mr Trump's argument that he enjoys presidential immunity.  Mr Trump had claimed in the landmark legal case that he was immune from all criminal charges for acts he said fell within his duties as president.  But the appeals court ruled unanimously against the 77-year-old, writing that: \"We cannot accept former President Trump's claim that a president has unbounded authority to commit crimes that would neutralise the most fundamental check on executive power - the recognition and implementation of election results.\"",
+      "image": "https://ichef.bbci.co.uk/news/976/cpsprodpb/FFCE/production/_132768456_gettyimages-2026358061.jpg.webp",
+      "id": "9e9f"
+    },
+    {
+      "id": "f886",
+      "title": "We expect action against attackers of Indian missions in London, San Francisco: Jaishankar",
+      "author": "PTI",
+      "content": "India expects action against the culprits involved in last year's attacks on its high commission in London and consulate in San Francisco as well as those involved in threatening the Indian diplomats in Canada, External Affairs Minister S. Jaishankar on Monday said.\n\nThe External Affairs Minister said India had to suspend issuance of visas in Canada as its diplomats were repeatedly \"threatened and intimidated in many ways\" and we \"got very little comfort from the Canadian system that time\".",
+      "image": "https://th-i.thgim.com/public/incoming/bhgimb/article67890616.ece/alternates/LANDSCAPE_1200/20240226337L.jpg"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "content": "In a quiet corner of the western world, the hobbit Frodo Baggins lives a peaceful life in the idyllic Shire. However, his world is shattered when he inherits the One Ring, an artifact of immense power forged by the Dark Lord Sauron. This ring holds the key to Sauron's dominion over Middle-earth, and Frodo embarks on a perilous quest to destroy it in the fires of Mount Doom. Guided by the wise wizard Gandalf and a fellowship of companions, including hobbits, men, elves, and dwarves, Frodo faces treacherous landscapes, fearsome creatures, and the ever-present threat of Sauron's forces. As the journey progresses, the fellowship fractures, and Frodo is left with his loyal friend Samwise Gamgee to continue the quest. Through trials and tribulations, Frodo confronts his inner demons and the corrupting influence of the Ring. He learns the true meaning of courage, friendship, and sacrifice, ultimately reaching Mount Doom and destroying the One Ring, bringing an end to Sauron's reign and restoring peace to Middle-earth.",
+      "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71jLBXtWJWL._AC_UF1000,1000_QL80_.jpg",
+      "price": "149",
+      "id": "66a5"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "content": "Elizabeth Bennet is the intelligent and independent daughter of a country gentleman. When the wealthy and arrogant Mr. Darcy arrives in her neighborhood, their initial encounters are marked by conflict and misunderstanding. However, beneath Darcy's aloof exterior lies a kind and thoughtful man, while Elizabeth's initial prejudice against him begins to fade as she learns more about his true character. The story explores themes of social class, gender roles, and the nature of love and marriage. Through witty dialogue and insightful observations of human behavior, Austen paints a vivid picture of early 19th-century English society. As Elizabeth and Darcy overcome their pride and prejudice, they discover a deeper connection and embark on a journey of love and self-discovery.",
+      "image": "https://images.penguinrandomhouse.com/cover/9780593622452",
+      "price": "119",
+      "id": "884c"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "content": "In the racially charged atmosphere of the American South during the 1930s, Scout Finch, a young girl living in the fictional town of Maycomb, Alabama, learns valuable lessons about life, justice, and prejudice. Through the eyes of Scout and her brother Jem, we witness the trial of Tom Robinson, a black man falsely accused of assaulting a white woman. Their father, Atticus Finch, a lawyer, courageously defends Robinson despite facing social ostracization and threats from the community. The novel explores complex themes of racial injustice, social inequality, and the power of empathy and compassion. Scout's innocent perspective sheds light on the hypocrisy and prejudice prevalent in the society, while Atticus's unwavering integrity serves as a moral compass for both his children and the reader. To Kill a Mockingbird remains a timeless classic, reminding us of the importance of fighting for what is right, even in the face of adversity.",
+      "image": "https://m.media-amazon.com/images/I/51Z9p5AecCL._SY445_SX342_.jpghttps://upload.wikimedia.org/wikipedia/en/thumb/6/6b/To_Kill_a_Mockingbird_novel_cover.jpg/220px-To_Kill_a_Mockingbird_novel_cover.jpghttps://m.media-amazon.com/images/I/51Z9p5AecCL._SY445_SX342_.jpg",
+      "price": "199",
+      "id": "54dc"
+    },
+    {
+      "title": "The Shiva Trilogy",
+      "author": "Amish Tripathi",
+      "content": "A special collector's edition of the fastest selling series in Indian publishing history! Beautifully designed and packaged, the Shiva Trilogy by Amish Tripathi gets a brand new look in a never-seen before avatar. Includes: The Immortals of Meluha, The Secret of Nagas and The Oath of the Vayuputras.",
+      "image": "https://m.media-amazon.com/images/I/814vJ+U4DrL._SY466_.jpg",
+      "price": "2166",
+      "id": "948b"
+    },
+    {
+      "title": "Chronicles of a Code Whisperer",
+      "author": "Alan Turing Jr.",
+      "content": "A captivating memoir by the son of the renowned computer scientist Alan Turing, detailing his own journey into the world of artificial intelligence and the challenges of living in the shadow of a legendary father.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8XwcutAN2yUlbl9_Kh88AVyQmvNhpueRcAm6lpijNBw&s",
+      "price": "219",
+      "id": "9fc0"
+    },
+    {
+      "title": "Symphony of the Seasons",
+      "author": "Harmony Song",
+      "content": "A heartwarming collection of poems inspired by the beauty and wonder of nature's changing seasons, filled with evocative imagery and lyrical prose.",
+      "image": "https://m.media-amazon.com/images/I/718-cRP4mDL._AC_UF1000,1000_QL80_.jpg",
+      "price": "249",
+      "id": "cc57"
+    },
+    {
+      "title": "Mythology for the Modern Mind",
+      "author": "Dr. Historia",
+      "content": "An engaging exploration of ancient myths and legends from around the world, delving into their historical context, cultural significance, and enduring relevance in the modern era.",
+      "image": "https://m.media-amazon.com/images/I/91HgXiP3LtL._AC_UF1000,1000_QL80_.jpg",
+      "price": "179",
+      "id": "c4e2"
+    },
+    {
+      "title": "The Last Starfighter",
+      "author": "Lance Orion",
+      "content": "A seemingly ordinary teenager discovers he is the last descendant of a legendary alien warrior race and is thrust into an epic battle to save the galaxy from an ancient evil.",
+      "image": "https://m.media-amazon.com/images/M/MV5BNjIzMWIzMmUtM2E0MC00OTExLWIzYzEtNWIzNzg3M2VjZmQ5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+      "price": "199",
+      "id": "ce8a"
+    },
+    {
+      "id": "f743",
+      "title": "The 48 Laws of Power",
+      "author": " Robert Greene",
+      "content": "Amoral, cunning, ruthless, and instructive, this multi-million-copy New York Times bestseller is the definitive manual for anyone interested in gaining, observing, or defending against ultimate control – from the author of The Laws of Human Nature.\n\nIn the book that People magazine proclaimed “beguiling” and “fascinating,” Robert Greene and Joost Elffers have distilled three thousand years of the history of power into 48 essential laws by drawing from the philosophies of Machiavelli, Sun Tzu, and Carl Von Clausewitz and also from the lives of figures ranging from Henry Kissinger to P.T. Barnum.\n \nSome laws teach the need for prudence (“Law 1: Never Outshine the Master”), others teach the value of confidence (“Law 28: Enter Action with Boldness”), and many recommend absolute self-preservation (“Law 15: Crush Your Enemy Totally”). Every law, though, has one thing in common: an interest in total domination. In a bold and arresting two-color package, The 48 Laws of Power is ideal whether your aim is conquest, self-defense, or simply to understand the rules of the game.",
+      "image": "https://m.media-amazon.com/images/I/611X8GI7hpL._SY466_.jpg",
+      "price": "149"
+    },
+    {
+      "id": "2ee5",
+      "title": "The Heaven & Earth Grocery Store",
+      "author": "James McBride",
+      "content": "A NEW YORK TIMES NOTABLE BOOK\n\nNAMED A BEST BOOK OF THE YEAR BY NPR/FRESH AIR, WASHINGTON POST, THE NEW YORKER, AND TIME MAGAZINE\n\nONE OF BARACK OBAMA'S FAVORITE BOOKS OF 2023\n\n“A murder mystery locked inside a Great American Novel . . . Charming, smart, heart-blistering, and heart-healing.” —Danez Smith, The New York Times Book Review\n\n“We all need—we all deserve—this vibrant, love-affirming novel that bounds over any difference that claims to separate us.” —Ron Charles, The Washington Post\n\nFrom James McBride, author of the bestselling Oprah’s Book Club pick Deacon King Kong and the National Book Award–winning The Good Lord Bird, a novel about small-town secrets and the people who keep them\n\nIn 1972, when workers in Pottstown, Pennsylvania, were digging the foundations for a new development, the last thing they expected to find was a skeleton at the bottom of a well. Who the skeleton was and how it got there were two of the long-held secrets kept by the residents of Chicken Hill, the dilapidated neighborhood where immigrant Jews and African Americans lived side by side and shared ambitions and sorrows. Chicken Hill was where Moshe and Chona Ludlow lived when Moshe integrated his theater and where Chona ran the Heaven & Earth Grocery Store. When the state came looking for a deaf boy to institutionalize him, it was Chona and Nate Timblin, the Black janitor at Moshe’s theater and the unofficial leader of the Black community on Chicken Hill, who worked together to keep the boy safe.\n\n    As these characters’ stories overlap and deepen, it becomes clear how much the people who live on the margins of white, Christian America struggle and what they must do to survive. When the truth is finally revealed about what happened on Chicken Hill and the part the town’s white establishment played in it, McBride shows us that even in dark times, it is love and community—heaven and earth—that sustain us.\n\n    Bringing his masterly storytelling skills and his deep faith in humanity to The Heaven & Earth Grocery Store, James McBride has written a novel as compassionate as Deacon King Kong and as inventive as The Good Lord Bird.",
+      "image": "https://m.media-amazon.com/images/I/81iJhMIo2lL._SY466_.jpg",
+      "price": "99"
+    },
+    {
+      "id": "fec8",
+      "title": "Fourth Wing (The Empyrean Book 1)",
+      "author": "Rebecca Yarros",
+      "content": "A #1 New York Times bestseller • Optioned for TV by Amazon Studios • Amazon Best Books of the Year, #4 • Apple Best Books of the Year 2023 • Barnes & Noble Best Fantasy Book of 2023 • NPR “Books We Love” 2023 • Audible Best Books of 2023 • Hudson Book of the Year • Google Play Best Books of 2023 • Indigo Best Books of 2023 • Waterstones Book of the Year finalist • Goodreads Choice Award, semi-finalist • Newsweek Staffers’ Favorite Books of 2023 • Paste Magazine's Best Books of 2023\n\n\"Suspenseful, sexy, and with incredibly entertaining storytelling, the first in Yarros' Empyrean series will delight fans of romantic, adventure-filled fantasy.\" —Booklist, starred review\n\n\"Fourth Wing will have your heart pounding from beginning to end... A fantasy like you've never read before.\" ―#1 New York Times bestselling author Jennifer L. Armentrout\n\n\nEnter the brutal and elite world of a war college for dragon riders from New York Times bestselling author Rebecca Yarros\n\nTwenty-year-old Violet Sorrengail was supposed to enter the Scribe Quadrant, living a quiet life among books and history. Now, the commanding general—also known as her tough-as-talons mother—has ordered Violet to join the hundreds of candidates striving to become the elite of Navarre: dragon riders.\n\nBut when you’re smaller than everyone else and your body is brittle, death is only a heartbeat away...because dragons don’t bond to “fragile” humans. They incinerate them.\n\nWith fewer dragons willing to bond than cadets, most would kill Violet to better their own chances of success. The rest would kill her just for being her mother’s daughter—like Xaden Riorson, the most powerful and ruthless wingleader in the Riders Quadrant.\n\nShe’ll need every edge her wits can give her just to see the next sunrise.\n\nYet, with every day that passes, the war outside grows more deadly, the kingdom's protective wards are failing, and the death toll continues to rise. Even worse, Violet begins to suspect leadership is hiding a terrible secret.\n\nFriends, enemies, lovers. Everyone at Basgiath War College has an agenda—because once you enter, there are only two ways out: graduate or die.\n\nThe Empyrean series is best enjoyed in order.\nReading Order:\nBook #1 Fourth Wing\nBook #2 Iron Flame",
+      "image": "https://m.media-amazon.com/images/I/914HWd0RxsL._SY466_.jpg",
+      "price": "119"
+    },
+    {
+      "id": "7e20",
+      "title": "Holly",
+      "author": "Stephen King",
+      "content": "#1 New York Times Bestseller * New York Times Notable Book * NPR Best Book of the Year\n\nHolly Gibney, one of Stephen King’s most compelling and resourceful characters, returns in this chilling novel to solve the gruesome truth behind multiple disappearances in a midwestern town.\n\n“Sometimes the universe throws you a rope.” —BILL HODGES\n\nStephen King’s Holly marks the triumphant return of beloved King character Holly Gibney. Readers have witnessed Holly’s gradual transformation from a shy (but also brave and ethical) recluse in Mr. Mercedes to Bill Hodges’s partner in Finders Keepers to a full-fledged, smart, and occasionally tough private detective in The Outsider. In King’s new novel, Holly is on her own, and up against a pair of unimaginably depraved and brilliantly disguised adversaries.\n\nWhen Penny Dahl calls the Finders Keepers detective agency hoping for help locating her missing daughter, Holly is reluctant to accept the case. Her partner, Pete, has Covid. Her (very complicated) mother has just died. And Holly is meant to be on leave. But something in Penny Dahl’s desperate voice makes it impossible for Holly to turn her down.\n\nMere blocks from where Bonnie Dahl disappeared live Professors Rodney and Emily Harris. They are the picture of bourgeois respectability: married octogenarians, devoted to each other, and semi-retired lifelong academics. But they are harboring an unholy secret in the basement of their well-kept, book-lined home, one that may be related to Bonnie’s disappearance. And it will prove nearly impossible to discover what they are up to: they are savvy, they are patient, and they are ruthless.\n\nHolly must summon all her formidable talents to outthink and outmaneuver the shockingly twisted professors in this chilling new masterwork from Stephen King.\n\n“I could never let Holly Gibney go. She was supposed to be a walk-on character in Mr. Mercedes and she just kind of stole the book and stole my heart. Holly is all her.” —STEPHEN KING",
+      "image": "https://m.media-amazon.com/images/I/811HWWUPsuL._SY466_.jpg",
+      "price": "129"
+    },
+    {
+      "id": "4a99",
+      "title": "Small Mercies: A Detective Mystery",
+      "author": "Dennis Lehane",
+      "content": "Instant New York Times Bestseller\n\n“Small Mercies is thought provoking, engaging, enraging, and can’t-put-it-down entertainment.” — Stephen King\n\nThe acclaimed New York Times bestselling writer returns with a masterpiece to rival Mystic River—an all-consuming tale of revenge, family love, festering hate, and insidious power, set against one of the most tumultuous episodes in Boston’s history.\n\nIn the summer of 1974 a heatwave blankets Boston and Mary Pat Fennessy is trying to stay one step ahead of the bill collectors. Mary Pat has lived her entire life in the housing projects of “Southie,” the Irish American enclave that stubbornly adheres to old tradition and stands proudly apart.\n\nOne night Mary Pat’s teenage daughter Jules stays out late and doesn’t come home. That same evening, a young Black man is found dead, struck by a subway train under mysterious circumstances.\n\nThe two events seem unconnected. But Mary Pat, propelled by a desperate search for her missing daughter, begins turning over stones best left untouched—asking questions that bother Marty Butler, chieftain of the Irish mob, and the men who work for him, men who don’t take kindly to any threat to their business.\n\nSet against the hot, tumultuous months when the city’s desegregation of its public schools exploded in violence, Small Mercies is a superb thriller, a brutal depiction of criminality and power, and an unflinching portrait of the dark heart of American racism. It is a mesmerizing and wrenching work that only Dennis Lehane could write.",
+      "image": "https://m.media-amazon.com/images/I/814RsaMtNuL._SY466_.jpg",
+      "price": "139"
+    }
+  ]
+}
