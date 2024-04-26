@@ -14,7 +14,7 @@ export default function EditBlog() {
 
   useEffect(() => {
     axios
-      .get("https://library-website-frontend.onrender.com/blogs")
+      .get("https://library-website-backend.onrender.com/blogs")
       .then((res) => setBlogData(res.data))
       .catch((err) => console.log(err));
   }, [blogData]);
