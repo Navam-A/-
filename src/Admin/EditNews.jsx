@@ -14,7 +14,7 @@ export default function EditNews() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/news")
+      .get("https://library-website-backend.onrender.com/news")
       .then((res) => setNewsData(res.data))
       .catch((err) => console.log(err));
   }, [newsData]);
