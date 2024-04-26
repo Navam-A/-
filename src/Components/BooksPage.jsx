@@ -8,7 +8,7 @@ export default function BooksPage() {
   let navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:3000/books")
+      .get("https://library-website-backend.onrender.com/books")
       .then((res) => {
         setData(res.data);
       })
