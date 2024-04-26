@@ -10,7 +10,7 @@ export default function CreateBlog() {
   let postData = (e) => {
     e.preventDefault();
     axios
-      .post("https://library-website-frontend.onrender.com/blogs", {
+      .post("https://library-website-backend.onrender.com/blogs", {
         title,
         author,
         content,
