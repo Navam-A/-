@@ -14,7 +14,7 @@ export default function EditBook() {
 
   useEffect(() => {
     axios
-      .get("https://library-website-frontend.onrender.com/books")
+      .get("https://library-website-backend.onrender.com/books")
       .then((res) => setBookData(res.data))
       .catch((err) => console.log(err));
   }, [bookData]);
