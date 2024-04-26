@@ -9,7 +9,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/blogs")
+      .get("https://library-website-backend.onrender.com/blogs")
       .then((res) => setBlogData(res.data))
       .catch((err) => console.log(err));
   }, []);
