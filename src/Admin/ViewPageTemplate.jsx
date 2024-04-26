@@ -14,7 +14,7 @@ export default function ViewPageTemplate() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/${endpoint}/${id}`)
+      .get(`https://library-website-backend.onrender.com/${endpoint}/${id}`)
       .then((res) => {
         setTitle(res.data.title);
         setContent(res.data.content);
